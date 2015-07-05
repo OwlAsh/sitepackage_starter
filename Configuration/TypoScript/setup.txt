@@ -1,6 +1,7 @@
 ### Dependencies
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:css_styled_content/static/setup.txt">
 
+
 ### PAGE
 page = PAGE
 page {
@@ -59,6 +60,10 @@ page {
 	}
 
 	meta {
+		viewport = {$page.meta.viewport}
+		robots = {$page.meta.robots}
+		google = {$page.meta.google}
+		apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
 		description = {$page.meta.description}
 		description.override.field = description
 		author = {$page.meta.author}
@@ -73,6 +78,36 @@ page {
 
 	includeJSFooter {
 		site = EXT:sitepackage_starter/Resources/Public/JavaScripts/site.js
+	}
+
+	jsInline {
+		# Google Analytics
+		10 = COA
+		10 {
+			if.isTrue = {$page.tracking.google.trackingID}
+
+			10 = TEXT
+			10.value (
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', '{$page.tracking.google.trackingID}', 'auto');
+			)
+
+			20 = TEXT
+			20 {
+				if.isTrue = {$page.tracking.google.anonymizeIp}
+				value (
+	ga('set', 'anonymizeIp', true);
+				)
+			}
+
+			90 = TEXT
+			90.value (
+	ga('send', 'pageview');
+			)
+		}
 	}
 }
 
