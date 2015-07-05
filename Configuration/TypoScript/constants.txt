@@ -16,6 +16,8 @@ page {
     partialRootPath = EXT:sitepackage_starter/Resources/Private/Partials/Page/
     # cat=site package: advanced/100/120; type=string; label=Template Root Path: Path to templates
     templateRootPath = EXT:sitepackage_starter/Resources/Private/Templates/Page/
+    # cat=site package: advanced/100/130; type=string; label=Header Root Path: Path to templates
+    headerRootPath = EXT:sitepackage_starter/Resources/Private/Templates/Header/
   }
 
   meta {

@@ -6,6 +6,17 @@ page = PAGE
 page {
 	typeNum = 0
 
+	headerData {
+		10 = FLUIDTEMPLATE
+		10 {
+			templateName = Icons
+			templateRootPaths {
+				100 = EXT:sitepackage_starter/Resources/Private/Templates/Header/
+				110 = {$page.fluidtemplate.headerRootPath}
+			}
+		}
+	}
+
 	10 = FLUIDTEMPLATE
 	10 {
 		templateName = TEXT
