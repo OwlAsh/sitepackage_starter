@@ -1,11 +1,52 @@
 <div xmlns="http://www.w3.org/1999/xhtml" lang="en"
-	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+	 xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
 
 	<f:layout name="Default" />
 
 	<f:section name="Navigation">
 		<div class="header">
 			<f:render partial="Navigation" section="HomeMenu" arguments="{_all}"/>
+		</div>
+	</f:section>
+
+	<f:section name="Splash">
+		<v:content.render column="0"/>
+	</f:section>
+
+	<f:section name="Content">
+		<div class="content-wrapper">
+			<v:page.menu levels="1" as="sections" showHiddenInMenu="1">
+				<f:for each="{sections}" as="section">
+					<f:switch expression="{section.backend_layout -> v:format.replace(substring: 'sitepackage_starter__', replacement: '')}">
+						<f:case value="RibbonSection"><f:render section="RibbonSection" arguments="{page : section}"/></f:case>
+						<f:case default="true"><f:render section="PlainSection" arguments="{page : section}"/></f:case>
+					</f:switch>
+				</f:for>
+			</v:page.menu>
+
+			<div class="footer l-box is-center">
+				View the source of this site package to learn more.
+			</div>
+		</div>
+	</f:section>
+
+	<f:section name="RibbonSection">
+		<div class="ribbon l-box-lrg pure-g">
+			<div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+				<v:content.render pageUid="{page.uid}" column="1"/>
+			</div>
+			<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+				<h2 class="content-head content-head-ribbon">{page.title}</h2>
+				<v:content.render pageUid="{page.uid}" column="2"/>
+			</div>
+		</div>
+	</f:section>
+
+	<f:section name="PlainSection">
+		<div class="content">
+			<h2 class="content-head is-center">{page.title}</h2>
+			<v:content.render pageUid="{page.uid}" column="0"/>
 		</div>
 	</f:section>
 </div>
