@@ -1,8 +1,8 @@
 var config = require('./');
 
 module.exports = [
-    // {
-    //   src: config.bowerDirectory + '/foundation-icon-fonts/*.{eot,svg,ttf,otf,woff,wfoff2}',
-    //   dest: config.publicDirectory + '/Fonts/foundation-icons'
-    // }
+    {
+      src: config.bowerDirectory + '/font-awesome/fonts/fontawesome-webfont.{eot,svg,ttf,otf,woff,wfoff2}',
+      dest: config.publicDirectory + '/Fonts'
+    }
 ];
