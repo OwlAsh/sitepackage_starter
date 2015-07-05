@@ -13,7 +13,8 @@ $EM_CONF[$_EXTKEY] = array(
 		'depends' => array(
 			'typo3' => '7.3.0-7.99.99',
 			'css_styled_content' => '7.3.0-7.9.99',
-			'vhs' => '2.3.0-2.99.99'
+			'vhs' => '2.3.0-2.99.99',
+			'gridelements' => '3.99.99-4.99.99'
 		),
 		'conflicts' => array(),
 		'suggests' => array(

@@ -5,3 +5,5 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_starter/Configuration/PageTS/RTE.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_starter/Configuration/PageTS/TCEFORM.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_starter/Configuration/PageTS/TCEMAIN.txt">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_starter/Configuration/PageTS/GridElements/4-Columns.txt">

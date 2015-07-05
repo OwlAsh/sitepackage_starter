@@ -1,0 +1,20 @@
+tt_content.gridelements_pi1.20.10.setup {
+	# Four Columns
+	4col < lib.gridelements.defaultGridSetup
+	4col {
+		columns {
+			default.renderObj.20 {
+				stdWrap.innerWrap.cObject.default.20.10.value = l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4
+			}
+
+			401 < .default
+
+			402 < .401
+
+			403 < .401
+
+			404 < .401
+		}
+		wrap = <div class="pure-g">|</div>
+	}
+}

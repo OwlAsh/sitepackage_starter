@@ -1,0 +1,35 @@
+tx_gridelements.setup {
+	# ID of Element
+	4col {
+		title = Four Columns
+		config {
+			colCount = 4
+			rowCount = 1
+			rows {
+				1 {
+					columns {
+						1 {
+							name = Column #1
+							colPos = 401
+						}
+						2 {
+							name = Column #2
+							colPos = 402
+						}
+						3 {
+							name = Column #3
+							colPos = 403
+						}
+						4 {
+							name = Column #4
+							colPos = 404
+						}
+					}
+				}
+			}
+		}
+		icon = EXT:sitepackage_starter/ext_icon.png
+		flexformDS (
+		)
+	}
+}

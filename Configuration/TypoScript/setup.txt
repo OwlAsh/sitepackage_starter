@@ -1,6 +1,17 @@
 ### Dependencies
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:css_styled_content/static/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/setup.txt">
 
+
+### Grid Element Definitions
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_starter/Configuration/TypoScript/GridElements/4-Columns.txt">
+
+### Content Elements
+tt_content.stdWrap.innerWrap.override = |
+tt_content.stdWrap.innerWrap.override.if {
+	equals = gridelements_pi1
+	value.field = CType
+}
 
 ### PAGE
 page = PAGE
