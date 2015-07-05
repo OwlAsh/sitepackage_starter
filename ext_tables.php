@@ -15,3 +15,11 @@ if (!defined('TYPO3_MODE')) {
 //	'<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY .
 //	'/Configuration/PageTS/setup.txt">'
 // );
+
+/**
+ * Provider for backend layouts
+ */
+if (TYPO3_MODE === 'BE') {
+	$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['BackendLayoutDataProvider'][$_EXTKEY] = 'MojoCode\\SitepackageStarter\\Provider\\FileProvider';
+	$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['BackendLayoutFileProvider']['ext'][$_EXTKEY] = $_EXTKEY;
+}

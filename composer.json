@@ -1,0 +1,33 @@
+{
+	"name": "mojocode/sitepackage-starter",
+	"type": "typo3-cms-extension",
+	"description": "Sitepackage Starter is an example of how to build a TYPO3 CMS extension that includes all configuration for a site",
+	"homepage": "https://github.com/yabawock/sitepackage_starter",
+	"version": "0.0.1",
+	"keywords": [
+		"TYPO3 CMS",
+		"sitepackage"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Morton Jonuschat",
+			"email": "m.jonuschat@mojocode.de",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"typo3/cms-core": ">=7.3.0, <8.0",
+		"typo3/cms-css-styled-content": ">=7.3.0, <8.0"
+	},
+	"conflict": {},
+	"autoload": {
+		"psr-4": {
+			"MojoCode\\SitepackageStarter\\": "Classes"
+		}
+	},
+	"replace": {
+		"sitepackage_starter": "self.version",
+		"typo3-ter/sitepackage-starter": "self.version"
+	}
+}
