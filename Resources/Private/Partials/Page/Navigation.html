@@ -1,0 +1,31 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"
+	 xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+	<f:section name="HomeMenu">
+		<v:page.menu levels="1" as="sections">
+			<div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+				<f:link.page pageUid="{rootPage}" class="pure-menu-heading">{siteTitle}</f:link.page>
+
+				<ul class="pure-menu-list">
+					<li class="pure-menu-item">
+						<a href="#section-{data.uid}"
+						   class="pure-menu-link"
+						   title="{f:if(condition: data.nav_title, then: data.nav_title, else: data.title)}">
+							{f:if(condition: data.nav_title, then: data.nav_title, else: data.title)}
+						</a>
+					</li>
+					<f:for each="{sections}" as="section" iteration="iteration">
+						<li class="pure-menu-item">
+							<a href="#section-{section.uid}"
+							   class="pure-menu-link"
+							   title="{f:if(condition: section.nav_title, then: section.nav_title, else: section.title)}">
+								{f:if(condition: section.nav_title, then: section.nav_title, else: section.title)}
+							</a>
+						</li>
+					</f:for>
+				</ul>
+			</div>
+		</v:page.menu>
+	</f:section>
+</div>
