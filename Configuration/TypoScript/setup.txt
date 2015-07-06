@@ -13,6 +13,9 @@ tt_content.stdWrap.innerWrap.override.if {
 	value.field = CType
 }
 
+### Custom Content Elements
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_starter/Configuration/TypoScript/ContentElements/Hero.txt">
+
 ### PAGE
 page = PAGE
 page {

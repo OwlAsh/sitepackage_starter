@@ -1,0 +1,20 @@
+mod.wizards {
+	newContentElement {
+		wizardItems {
+			sitepackage {
+				header = Custom Elements
+				elements {
+					hero {
+						icon = ../typo3conf/ext/sitepackage_starter/ext_icon.png
+						title = Hero Element
+						description = Hero / Splash Element for the head of page
+						tt_content_defValues {
+							CType = sitepackage_starter_hero
+						}
+					}
+				}
+				show = *
+			}
+		}
+	}
+}

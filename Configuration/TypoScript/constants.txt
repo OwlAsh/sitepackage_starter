@@ -72,6 +72,18 @@ config {
   headerComment = Based on sitepackage_starter — https://github.com/yabawock/sitepackage_starter/
 }
 
+### CUSTOM CONTENT ELEMENTS
+plugin.sitepackage_starter_contentelements {
+	view {
+		# cat=site package: advanced/140/100; type=string; label=Layout Root Path: Path to layouts
+		layoutRootPath = EXT:sitepackage_starter/Resources/Private/Layouts/ContentElements
+		# cat=site package: advanced/140/110; type=string; label=Partial Root Path: Path to partials
+		partialRootPath = EXT:sitepackage_starter/Resources/Private/Partials/ContentElements
+		# cat=site package: advanced/140/120; type=string; label=Template Root Path: Path to templates
+		templateRootPath = EXT:sitepackage_starter/Resources/Private/Templates/ContentElements
+	}
+}
+
 ### CSS STYLED CONTENT
 styles {
   content {

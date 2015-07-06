@@ -7,3 +7,5 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_starter/Configuration/PageTS/TCEMAIN.txt">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_starter/Configuration/PageTS/GridElements/4-Columns.txt">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sitepackage_starter/Configuration/PageTS/ContentElements/newContentElementWizard.txt">
