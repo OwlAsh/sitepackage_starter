@@ -11,7 +11,7 @@
 	</f:section>
 
 	<f:section name="Splash">
-		<div class="splash-container">
+		<div id="section-{data.uid}" class="splash-container">
 			<v:content.render column="0" pageUid="{data.uid}"/>
 		</div>
 	</f:section>
@@ -34,7 +34,7 @@
 	</f:section>
 
 	<f:section name="RibbonSection">
-		<div class="ribbon l-box-lrg pure-g">
+		<div id="section-{page.uid}" class="ribbon l-box-lrg pure-g">
 			<div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
 				<v:content.render pageUid="{page.uid}" column="1"/>
 			</div>
@@ -46,7 +46,7 @@
 	</f:section>
 
 	<f:section name="PlainSection">
-		<div class="content">
+		<div id="section-{page.uid}" class="content">
 			<h2 class="content-head is-center">{page.title}</h2>
 			<v:content.render pageUid="{page.uid}" column="0"/>
 		</div>

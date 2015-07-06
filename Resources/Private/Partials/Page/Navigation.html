@@ -11,7 +11,8 @@
 					<li class="pure-menu-item">
 						<a href="#section-{data.uid}"
 						   class="pure-menu-link"
-						   title="{f:if(condition: data.nav_title, then: data.nav_title, else: data.title)}">
+						   title="{f:if(condition: data.nav_title, then: data.nav_title, else: data.title)}"
+						   data-scroll>
 							{f:if(condition: data.nav_title, then: data.nav_title, else: data.title)}
 						</a>
 					</li>
@@ -19,7 +20,8 @@
 						<li class="pure-menu-item">
 							<a href="#section-{section.uid}"
 							   class="pure-menu-link"
-							   title="{f:if(condition: section.nav_title, then: section.nav_title, else: section.title)}">
+							   title="{f:if(condition: section.nav_title, then: section.nav_title, else: section.title)}"
+							   data-scroll>
 								{f:if(condition: section.nav_title, then: section.nav_title, else: section.title)}
 							</a>
 						</li>

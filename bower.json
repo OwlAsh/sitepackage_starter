@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "pure": "~0.6.0",
-    "font-awesome": "~4.3.0"
+    "font-awesome": "~4.3.0",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#^5.3.7"
   }
 }
