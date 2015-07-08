@@ -96,3 +96,7 @@ Resources/Vendor/
 Resources/Public/*
 !Resources/Public/**/*.keep
 !Resources/Public/.htaccess
+
+# Extension Releases
+/*.zip
+
