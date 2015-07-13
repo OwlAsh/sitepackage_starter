@@ -1,6 +1,6 @@
 {
   "name": "sitepackage_starter",
-  "version": "0.0.1",
+  "version": "0.9.0",
   "description": "Template to be used as a starting point for building TYPO3 CMS websites as an extension.",
   "author": {
     "name": "Morton Jonuschat",
