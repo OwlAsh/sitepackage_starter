@@ -73,7 +73,7 @@ page {
 	}
 
 	includeCSS {
-		styles = EXT:sitepackage_starter/Resources/Public/StyleSheets/styles.css
+		styles = EXT:sitepackage_starter/Resources/Public/Css/styles.css
 	}
 
 	includeJSFooter {
