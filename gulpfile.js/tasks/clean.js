@@ -4,6 +4,6 @@ var config = require('../config');
 
 gulp.task('clean', function (cb) {
     del([
-        config.publicDirectory + '/{StyleSheets,JavaScripts,Icons,Images,Fonts}/**/*'
+        config.publicDirectory + '/{Css,JavaScripts,Icons,Images,Fonts}/**/*'
     ], cb);
 });
