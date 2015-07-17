@@ -93,7 +93,7 @@ page {
 	}
 
 	includeJSFooter {
-		site = EXT:sitepackage_starter/Resources/Public/JavaScripts/site.js
+		site = EXT:sitepackage_starter/Resources/Public/JavaScript/site.js
 	}
 
 	jsInline {
