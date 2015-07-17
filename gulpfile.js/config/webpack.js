@@ -3,8 +3,8 @@ var paths = require('./');
 var webpack = require('webpack');
 
 module.exports = function (env) {
-    var jsSrc = path.resolve(paths.assetDirectory + '/JavaScripts/');
-    var jsDest = paths.publicDirectory + '/JavaScripts/';
+    var jsSrc = path.resolve(paths.assetDirectory + '/JavaScript/');
+    var jsDest = paths.publicDirectory + '/JavaScript/';
 
     var webpackConfig = {
         context: jsSrc,
@@ -14,7 +14,7 @@ module.exports = function (env) {
         resolve: {
             extensions: ['', '.js', '.coffee'],
             root: [
-                path.resolve(paths.assetDirectory + '/JavaScripts/'),
+                path.resolve(paths.assetDirectory + '/JavaScript/'),
                 path.resolve(paths.bowerDirectory)
             ]
         },
